@@ -1,2 +1,2 @@
 lazy val functionalprogramming = (project in file(".")).
-settings(Commons.settings: _*)
+  settings(Commons.settings: _*)

@@ -3,14 +3,14 @@ package functional.programming
 /**
  * @author lmedina
  */
-object Chapter_3 {
+object ChapterThree {
   def main(args: Array[String]) {
     lists()
     trees()
   }
 
   def lists() = {
-    import Chapter_3.List._
+    import ChapterThree.List._
 
     println("tail = " + tail(List(1, 2, 3)))
 
@@ -69,7 +69,7 @@ object Chapter_3 {
   }
 
   def trees() = {
-    import Chapter_3.Tree._
+    import ChapterThree.Tree._
 
     println("size = " + size(Branch(Leaf(1), Branch(Leaf(2), Leaf(3)))))
 
@@ -202,7 +202,7 @@ object Chapter_3 {
     /*
         Exercise 3.10
         Our implementation of foldRight is not tail-recursive and will result in a StackOverflowError for large lists
-        (we say it’s not stack-safe). Convince yourself that this is the case, and then write another general
+        (we say itï¿½s not stack-safe). Convince yourself that this is the case, and then write another general
         list-recursion function, foldLeft, that is tail-recursive, using the techniques we discussed in the previous
         chapter.
      */
@@ -399,7 +399,7 @@ object Chapter_3 {
         Hard: As an example, implement hasSubsequence for checking whether a List contains another List as a
         subsequence. For instance, List(1,2,3,4) would have List(1,2), List(2,3), and List(4) as subsequences, among
         others. You may have difficulty finding a concise purely functional implementation that is also efficient.
-        That’s okay. Implement the function however comes most naturally. We’ll return to this implementation in
+        Thatï¿½s okay. Implement the function however comes most naturally. Weï¿½ll return to this implementation in
         chapter 5 and hopefully improve on it. Note: Any two values x and y can be compared for equality in Scala using
         the expression x == y.
      */

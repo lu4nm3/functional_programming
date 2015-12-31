@@ -3,7 +3,7 @@ package functional.programming
 /**
  * @author lmedina
  */
-object Chapter_4 {
+object ChapterFour {
   def main(args: Array[String]) {
     println("map = " + Some(3).map(x => x + 2))
 
@@ -38,7 +38,7 @@ object Chapter_4 {
     /*
         Exercise 4.1
         Implement all of the preceding functions on Option. As you implement each function, try to think about what it
-        means and in what situations you’d use it. We’ll explore when to use each of these functions next.
+        means and in what situations youï¿½d use it. Weï¿½ll explore when to use each of these functions next.
      */
     def map[B](f: A => B): Option[B] = this match {
       case None => None
@@ -135,7 +135,7 @@ object Chapter_4 {
 
   /*
       Exercise 4.5
-      Implement this function. It’s straightforward to do using map and sequence, but try for a more efficient
+      Implement this function. Itï¿½s straightforward to do using map and sequence, but try for a more efficient
       implementation that only looks at the list once. In fact, implement sequence in terms of traverse.
    */
   def traverse[A, B](a: List[A])(f: A => Option[B]): Option[List[B]] = a match {
